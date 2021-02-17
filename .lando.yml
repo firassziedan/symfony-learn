@@ -2,3 +2,9 @@ name: symfony
 recipe: symfony
 config:
   webroot: public
+services:
+  appserver:
+    scanner: false
+    build:
+      - "wget https://get.symfony.com/cli/installer -O - | bash"
+      - 'mv /var/www/.symfony/bin/symfony /usr/local/bin/symfony'
