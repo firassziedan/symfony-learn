@@ -1,0 +1,4 @@
+name: symfony
+recipe: symfony
+config:
+  webroot: public
